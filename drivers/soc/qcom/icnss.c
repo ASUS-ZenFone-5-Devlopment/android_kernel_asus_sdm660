@@ -56,7 +56,7 @@ static int do_wlan_fw_log = 0;
 module_param(do_wlan_fw_log, int, S_IWUSR | S_IRUGO);
 MODULE_PARM_DESC(do_wlan_fw_log, "Is the wlan fw log flag");
 /* ASUS_BSP--- for wlan firmware log */
-
+#define PROBE_TIMEOUT                  5000
 #ifdef CONFIG_ICNSS_DEBUG
 unsigned long qmi_timeout = 10000;
 module_param(qmi_timeout, ulong, 0600);
